@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.strike::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -37.5%;
+    height: 3px;
+    width: 175%;
+    background-color: hsla(0,0%,100%,.85);
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+@media (min-width: 1024px) {
+
+    .container {
+        width: 72.5%;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
+    .strike::after {
+        max-width: 150%;
+        left: -25%;
+    }
+}
