@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 
 function ProjectCard({img, name, slug, github, description, techs}) {
 
-    return <div className="flex flex-col overflow-hidden bg-slate-800 rounded-lg mb-6">
+    return <div className="flex flex-col bg-slate-800  rounded-lg mb-6">
         <Link to={`/projects/${slug}`}>
             <img src={img} alt={`${name} Homepage`} className="rounded-t-lg" />
         </Link>
         <div className="p-4">
+            <ul className="flex flex-wrap gap-2 whitespace-nowrap text-xs mb-4">
+                {techs.map((tech, idx) => <li className="border-[1px] border-primary text-gray-300 px-2 py-1 rounded-full" key={idx}>{tech}</li>)}
+            </ul>
             <div className="flex justify-between mb-6">
                 <p className="text-2xl font-bold">{name}</p>
                 <a href={github} target="_blank" aria-label="View source code on Github">
@@ -16,9 +19,8 @@ function ProjectCard({img, name, slug, github, description, techs}) {
             </div>
             <p>{description}</p>
         </div>
-        <ul className="flex gap-1 whitespace-nowrap text-sm text-gray-400 p-4 mt-auto">
-            {techs.map((tech, idx) => <li key={idx}>{tech}</li>)}
-        </ul>
+
+        <Link className="p-4 text-gray-400" to={`/projects/${slug}`}>Read more...</Link>
     </div>
 
 }

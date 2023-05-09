@@ -3,7 +3,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import HomePage from './pages/HomePage'
 import CardgamePage from './pages/projects/CardgamePage'
 import KanbanPage from './pages/projects/KanbanPage'
-import QuizzicalPage from './pages/projects/QuizzicalPage'
 import ShoppywarePage from './pages/projects/ShoppywarePage'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
             <Route path="kanban" element={<KanbanPage/>}/>
             <Route path="shoppyware" element={<ShoppywarePage/>}/>
             <Route path="cardgame" element={<CardgamePage/>}/>
-            <Route path="quiz" element={<QuizzicalPage/>}/>
           </Route>
         </Route>
     )
