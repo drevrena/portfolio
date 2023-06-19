@@ -8,7 +8,7 @@ function Hero() {
     return <section className="relative flex flex-col lg:items-start lg:px-8 lg:py-16 py-32 my-36 items-center container">
         <p className="text-secondary font-medium sm:text-lg xl:text-xl">Hello! I am</p>
         <h1 className="text-white text-3xl sm:text-4xl xl:text-6xl font-bold">{magicString}</h1>
-        <h2 className="text-secondary text-xl xl:text-2xl font-bold my-4">Frontend Developer</h2>
+        <h2 className="text-secondary text-xl xl:text-2xl font-bold my-4">Fullstack Developer</h2>
         <ul className="lg:flex lg:list-disc lg:list-inside marker:text-primary marker:text-xl gap-8 text-center">
             <li>Software Engineer</li>
             <li>Web Developer</li>
