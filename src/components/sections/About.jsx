@@ -9,7 +9,7 @@ function About() {
         <div className="lg:flex lg:gap-2 m-auto mb-8">
             <img className="lg:h-64 w-64 mx-auto my-4 lg:order-1 rounded-full" src="./assets/images/profile-picture.webp" alt="Profile picture" />
             <p className="text-center font-medium m-auto mr-8 py-12 lg:border-y-[1px] border-slate-500">
-                Hello, I'm Davide, a passionate Frontend Developer. I mainly develop web applications that use React.js
+                Hello, I'm Davide, a passionate Fullstack Developer. I mainly develop web applications that use React.js and Spring.
             </p>
         </div>
         <p> 
